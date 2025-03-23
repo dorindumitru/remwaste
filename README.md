@@ -2,6 +2,8 @@
 
 RemWaste is a web application built with [Next.js](https://nextjs.org) to help manage and reduce waste effectively. This project was bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+The deployed version of the app is available on [https://remwaste.vercel.app/]
+
 ## Getting Started
 
 ### Prerequisites
