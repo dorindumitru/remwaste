@@ -5,7 +5,7 @@ import { SkipDrawer } from "@/components/SkipDrawer";
 import { SkipType } from "@/types/SkipType";
 
 export default async function Home({ searchParams }:
-  { searchParams: { skipSize: number } }) {
+  Readonly<{ searchParams: Promise<{ skipSize: number }> }>) {
   const { serverRuntimeConfig } = getConfig();
   const wewantwasteConfig = serverRuntimeConfig.wewantwaste;
   const backendUrl = wewantwasteConfig.apiEndpoint;
