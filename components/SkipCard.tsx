@@ -67,17 +67,21 @@ export const SkipCard = ({ skip, selectedSkip }:
               </p>
             </div>
           )}
-          {skip.transport_cost !== null && (
+          {skip.transport_cost !== null ? (
             <p
               className="text-gray-400 text-sm">
               {`Transport Cost: £${skip.transport_cost}`}
             </p>
+          ) : (
+            <div className="h-4"></div> // Placeholder for transport cost
           )}
-          {skip.per_tonne_cost !== null && (
+          {skip.per_tonne_cost !== null ? (
             <p
               className="text-gray-400 text-sm">
               {`Per Tonne Cost: £${skip.per_tonne_cost}`}
             </p>
+          ) : (
+            <div className="h-4"></div> // Placeholder for per tonne cost
           )}
           {totalCostWithVAT !== null && (
             <p
